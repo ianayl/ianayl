@@ -1,16 +1,14 @@
-### Hi there 👋
+I'm not on systemd rn, and I'm too lazy to make a vm, but can someone pls try this and get back to me with what shows on boot? Thanks a lot lol
 
-<!--
-**ianayl/ianayl** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+make`/etc/systemd/system/boomer.service`with the following:
+```ini
+[Unit]
+Description=BOOMER
 
-Here are some ideas to get you started:
+[Service]
+Type=simple
+ExecStart=/usr/bin/sleep 0
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[Install]
+WantedBy=multi-user.target
+```
