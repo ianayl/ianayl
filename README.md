@@ -11,5 +11,7 @@ Type=simple
 ExecStart=/usr/bin/sleep 0
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
+WantedBy=shutdown.target
+WantedBy=poweroff.target
 ```
