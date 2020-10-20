@@ -3,6 +3,7 @@ I'm not on systemd rn, and I'm too lazy to make a vm, but can someone pls try th
 make`/etc/systemd/system/boomer.service`with the following:
 ```ini
 [Unit]
+# comedy gold
 Description=BOOMER
 
 [Service]
